@@ -1,0 +1,29 @@
+apiVersion: v1
+entries:
+  jitsi-meet:
+  - annotations:
+      artifacthub.io/category: streaming-messaging
+      artifacthub.io/links: |
+        - name: Jitsi Meet
+          url: https://jitsi.org/jitsi-meet/
+        - name: Jitsi Meet Documentation
+          url: https://jitsi.github.io/handbook/docs/intro/
+        - name: Jitsi-Helm GitHub
+          url: https://github.com/jitsi-contrib/jitsi-helm
+    apiVersion: v2
+    appVersion: stable-10314
+    created: "2025-10-06T17:32:06.8376661+01:00"
+    dependencies:
+    - condition: prosody.enabled
+      name: prosody
+      repository: ""
+      version: 1.5.1
+    description: Jitsi Meet packaged for Kubernetes
+    digest: cdad45168d3c6c4d4be88550665f73e376dd8d6ff7abc670322a31b8b495dc40
+    icon: https://jitsi-contrib.github.io/jitsi-helm/jitsi-meet.png
+    name: jitsi-meet
+    type: application
+    urls:
+    - https://cpluan.github.io/jitsi-helm/jitsi-meet-1.5.1.tgz
+    version: 1.5.1
+generated: "2025-10-06T17:32:06.828656767+01:00"
